@@ -1,9 +1,9 @@
 <img src="img/banner.png" alt="Waseem Ahmad Ansari - Senior Software Engineer, AI &amp; LLM Quality Evaluator, Search Evaluator" width="100%">
 
 <p align="center">
-  <a href="https://waseemwdd0165-jpg.github.io"><img src="https://img.shields.io/badge/Portfolio-waseemwdd0165--jpg.github.io-2dd4bf?style=for-the-badge&labelColor=0d1117" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/waseem-ahmad-ansari-bba5771ab/"><img src="https://img.shields.io/badge/LinkedIn-Waseem%20Ahmad%20Ansari-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"></a>
-  <a href="mailto:Waseemwdd0165@gmail.com"><img src="https://img.shields.io/badge/Email-Waseemwdd0165%40gmail.com-e05252?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"></a>
+  <a href="https://waseemwdd0165-jpg.github.io"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=2dd4bf" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/waseem-ahmad-ansari-bba5771ab/"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=2dd4bf" alt="LinkedIn"></a>
+  <a href="mailto:Waseemwdd0165@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=2dd4bf" alt="Email"></a>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ---
 
-## 🔧 What I do
+## What I do
 
 I build software and I evaluate it. Knowing how a search stack or a language
 model pipeline is put together makes for sharper judgement of what it produces —
@@ -35,7 +35,7 @@ careful engineering.
 
 ---
 
-## 🎮 Multiplayer games
+## Multiplayer games
 
 Real-time games that run in a browser. No install, no account, no app store —
 open a link, share the code, and play. All three are server-authoritative on
@@ -51,7 +51,7 @@ a modified browser cannot cheat.
 
 ---
 
-## 🚀 Evaluation tools
+## Evaluation tools
 
 Four working tools, each built around a real evaluation workflow. All run in the
 browser on sample data — no API key, no server.
@@ -65,45 +65,45 @@ browser on sample data — no API key, no server.
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-512bd4?style=flat-square&logo=csharp&logoColor=white)
-![Java](https://img.shields.io/badge/Java-e76f00?style=flat-square&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-00599c?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599c?style=flat-square&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square)
-![PL/SQL](https://img.shields.io/badge/PL%2FSQL-f80000?style=flat-square&logo=oracle&logoColor=white)
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat&logo=python&logoColor=3776ab)
+![C#](https://img.shields.io/badge/C%23-0d1117?style=flat&logo=csharp&logoColor=a371f7)
+![Java](https://img.shields.io/badge/Java-0d1117?style=flat&logo=openjdk&logoColor=e76f00)
+![C](https://img.shields.io/badge/C-0d1117?style=flat&logo=c&logoColor=00599c)
+![C++](https://img.shields.io/badge/C%2B%2B-0d1117?style=flat&logo=cplusplus&logoColor=00599c)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=flat&logo=javascript&logoColor=f7df1e)
+![SQL](https://img.shields.io/badge/SQL-0d1117?style=flat)
+![PL/SQL](https://img.shields.io/badge/PL%2FSQL-0d1117?style=flat&logo=oracle&logoColor=f80000)
 
 **Web &amp; frameworks**
 
-![.NET](https://img.shields.io/badge/.NET%20%2F%20.NET%20Core-512bd4?style=flat-square&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-5c2d91?style=flat-square&logo=dotnet&logoColor=white)
-![Entity Framework](https://img.shields.io/badge/Entity%20Framework-512bd4?style=flat-square)
-![MVC](https://img.shields.io/badge/MVC-6a5acd?style=flat-square)
-![HTML5](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS-1572b6?style=flat-square&logo=css3&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-f38020?style=flat-square&logo=cloudflare&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET%20%2F%20.NET%20Core-0d1117?style=flat&logo=dotnet&logoColor=a371f7)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-0d1117?style=flat&logo=dotnet&logoColor=a371f7)
+![Entity Framework](https://img.shields.io/badge/Entity%20Framework-0d1117?style=flat)
+![MVC](https://img.shields.io/badge/MVC-0d1117?style=flat)
+![HTML5](https://img.shields.io/badge/HTML-0d1117?style=flat&logo=html5&logoColor=e34f26)
+![CSS3](https://img.shields.io/badge/CSS-0d1117?style=flat&logo=css3&logoColor=1572b6)
+![Three.js](https://img.shields.io/badge/Three.js-0d1117?style=flat&logo=threedotjs&logoColor=ffffff)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-0d1117?style=flat&logo=cloudflare&logoColor=f38020)
 
 **Databases**
 
-![Oracle](https://img.shields.io/badge/Oracle%20(DBA%20%26%20PL%2FSQL)-f80000?style=flat-square&logo=oracle&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
-![Stored procedures](https://img.shields.io/badge/Stored%20procedures-336791?style=flat-square)
+![Oracle](https://img.shields.io/badge/Oracle%20(DBA%20%26%20PL%2FSQL)-0d1117?style=flat&logo=oracle&logoColor=f80000)
+![MySQL](https://img.shields.io/badge/MySQL-0d1117?style=flat&logo=mysql&logoColor=4479a1)
+![MariaDB](https://img.shields.io/badge/MariaDB-0d1117?style=flat&logo=mariadb&logoColor=7d8b9e)
+![Stored procedures](https://img.shields.io/badge/Stored%20procedures-0d1117?style=flat)
 
 **Tools**
 
-![Git](https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ed?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-0d1117?style=flat&logo=git&logoColor=f05032)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat&logo=docker&logoColor=2496ed)
 
 ---
 
-## 💼 Experience
+## Experience
 
 <table>
 <tr><td width="230" valign="top">
@@ -157,7 +157,7 @@ Net Tech Services India Pvt. Ltd
 
 ---
 
-## 🎓 Education
+## Education
 
 **B.E. Computer Engineering** — University of Mumbai, Rizvi College of Engineering
 <br><sub>Examination May 2015 · Convocation January 2017</sub>
