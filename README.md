@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <sub>Based in Mumbai, India (IST) &nbsp;·&nbsp; +91 92703 04741</sub>
+  <sub>Based in Malegaon, Maharashtra, India (IST) &nbsp;·&nbsp; Remote &nbsp;·&nbsp; +91 92703 04741</sub>
 </p>
 
 ---
@@ -248,6 +248,6 @@ Net Tech Services India Pvt. Ltd
 ---
 
 <p align="center">
-  <sub>Open to full-time, contract, and freelance work.<br>
+  <sub>Open to remote contract and freelance work.<br>
   Reach me at <a href="mailto:Waseemwdd0165@gmail.com">Waseemwdd0165@gmail.com</a></sub>
 </p>
