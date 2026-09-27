@@ -35,6 +35,36 @@ careful engineering.
 
 ---
 
+## 🎮 Multiplayer games
+
+Real-time games that run in a browser. No install, no account, no app store —
+open a link, share the code, and play. All three are server-authoritative on
+Cloudflare Workers with Durable Objects, so every player sees the same world and
+a modified browser cannot cheat.
+
+| Game | What it is | Built with |
+|---|---|---|
+| **[Chalk Runner](https://chalk-runner.waseemwdd0165.workers.dev/)** | Two players on a blackboard. One draws the ground, the other runs on it and never stops. Chalk runs out and only works near the runner, so the drawer is always one line behind. Walls, low roofs and no-chalk gaps force ramps and jumps, and everyone gets the same level each day. | Canvas · Web Audio · WebSockets · Durable Objects |
+| **[Pitch Black](https://pitch-black.waseemwdd0165.workers.dev/)** | A stealth game played in the dark. One hunter, everyone else runs for the exit, and the caught join the hunt. Every device renders the same maze from its own torch, and the server sends each player only what their torch reaches — so the console gives nothing away. | Canvas · Raycasting · WebSockets · Durable Objects |
+| **[Sunday Park](https://sunday-park.waseemwdd0165.workers.dev/)** | A voxel amusement park everybody shares. No room code: open the link and you are at the gate with whoever else is online. Ride the big wheel, the carousel and the swings, or get lost in the mirror maze. Rides are seat-synced from the server. | Three.js · WebSockets · Durable Objects |
+| **[Human or Machine?](https://waseemwdd0165-jpg.github.io/human-or-machine.html)** | A room-code party game for 3 to 8. Everyone reads the same response and votes on whether a person or a model wrote it, then the reveal explains what gave it away. My day job, turned into a party game. | WebRTC, peer to peer — no server at all |
+
+---
+
+## 🚀 Evaluation tools
+
+Four working tools, each built around a real evaluation workflow. All run in the
+browser on sample data — no API key, no server.
+
+| Project | What it demonstrates |
+|---|---|
+| **[LLM Response Evaluator](https://waseemwdd0165-jpg.github.io/llm-evaluator.html)** | Side-by-side rubric scoring, forced preference choice, gold-label agreement, JSONL export — the RLHF preference-data loop |
+| **[Search Relevance Rater](https://waseemwdd0165-jpg.github.io/search-rater.html)** | Needs Met and Page Quality rating against written guidelines, keyboard-driven, CSV export |
+| **[Prompt Testing Workbench](https://waseemwdd0165-jpg.github.io/prompt-workbench.html)** | Prompt versions run against a fixed test set with automated checks, including a prompt-injection case |
+| **[Text Annotation Tool](https://waseemwdd0165-jpg.github.io/annotation-tool.html)** | Span labelling for NER data with live inter-annotator agreement against a gold standard |
+
+---
+
 ## 🛠️ Tech stack
 
 **Languages**
@@ -56,6 +86,8 @@ careful engineering.
 ![MVC](https://img.shields.io/badge/MVC-6a5acd?style=flat-square)
 ![HTML5](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS-1572b6?style=flat-square&logo=css3&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-f38020?style=flat-square&logo=cloudflare&logoColor=white)
 
 **Databases**
 
@@ -68,20 +100,6 @@ careful engineering.
 
 ![Git](https://img.shields.io/badge/Git-f05032?style=flat-square&logo=git&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ed?style=flat-square&logo=docker&logoColor=white)
-
----
-
-## 🚀 Projects
-
-Four working tools, each built around a real evaluation workflow. All run in the
-browser on sample data — no API key, no server.
-
-| Project | What it demonstrates |
-|---|---|
-| **[LLM Response Evaluator](https://waseemwdd0165-jpg.github.io/llm-evaluator.html)** | Side-by-side rubric scoring, forced preference choice, gold-label agreement, JSONL export — the RLHF preference-data loop |
-| **[Search Relevance Rater](https://waseemwdd0165-jpg.github.io/search-rater.html)** | Needs Met and Page Quality rating against written guidelines, keyboard-driven, CSV export |
-| **[Prompt Testing Workbench](https://waseemwdd0165-jpg.github.io/prompt-workbench.html)** | Prompt versions run against a fixed test set with automated checks, including a prompt-injection case |
-| **[Text Annotation Tool](https://waseemwdd0165-jpg.github.io/annotation-tool.html)** | Span labelling for NER data with live inter-annotator agreement against a gold standard |
 
 ---
 
