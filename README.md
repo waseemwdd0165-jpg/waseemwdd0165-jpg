@@ -53,8 +53,26 @@ a modified browser cannot cheat.
 
 ## Evaluation tools
 
-Four working tools, each built around a real evaluation workflow. All run in the
-browser on sample data — no API key, no server.
+Tools built out of seven years of rating work. Each one is a loop I actually
+run, turned into something anyone can use.
+
+### [rater-agreement](https://github.com/waseemwdd0165-jpg/rater-agreement) &nbsp;<sub>Python</sub>
+
+The useful question about two raters is never *how much did they agree*. It is
+*which boundary did they disagree on*. So this reports percent agreement,
+Cohen's and Fleiss' kappa, and then points at the pair of labels they keep
+mixing up and names every item they split on.
+
+In the sample run, one rater sits at 75 to 80 percent on three labels and
+**16.7 percent on the fourth** — she calls it by the neighbouring name almost
+every time. That is not a careless rater, it is one sentence in the guideline.
+
+No dependencies, standard library only, 30 tests with the kappa arithmetic
+worked out by hand in the comments rather than computed by the code under test.
+
+### Four browser tools
+
+All run in the browser on sample data — no API key, no server.
 
 | Project | What it demonstrates |
 |---|---|
