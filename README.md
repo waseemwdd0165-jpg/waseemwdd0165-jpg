@@ -83,6 +83,26 @@ All run in the browser on sample data — no API key, no server.
 
 ---
 
+## From the banking years
+
+Nine years on the nationwide Cheque Truncation System rollout, written out as
+code rather than left on a CV.
+
+### [cheque-batch-validator](https://github.com/waseemwdd0165-jpg/cheque-batch-validator) &nbsp;<sub>.NET 8</sub>
+
+A presentment batch either agrees with its own trailer or it does not settle.
+The rule that matters is which records you count: the control total is compared
+against every record the file claimed to contain, including the ones validation
+threw out and the ones nobody could parse. Compare it against the survivors
+instead and a file can drop a record in transit and still balance, which is the
+one failure a control total exists to catch.
+
+Four sample batches ship with it, two that settle and two that do not, plus an
+xUnit suite over the field rules, both kinds of duplicate, and every way the
+control check can fail.
+
+---
+
 ## Tech stack
 
 **Languages**
