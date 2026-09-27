@@ -70,6 +70,21 @@ every time. That is not a careless rater, it is one sentence in the guideline.
 No dependencies, standard library only, 30 tests with the kappa arithmetic
 worked out by hand in the comments rather than computed by the code under test.
 
+### [eval-sampler](https://github.com/waseemwdd0165-jpg/eval-sampler) &nbsp;<sub>Java</sub>
+
+Forty thousand responses, budget to rate five hundred. Which five hundred? And
+then the budget goes up and the obvious fix, redrawing, throws away every rating
+already done.
+
+Nothing here is shuffled. Each row gets a sort key from the seed and its own id,
+and the sample is the lowest keys in each stratum, so the same seed picks the
+same rows on any machine, and asking for 1,200 after rating 500 returns a set
+that contains those 500. The quota maths is largest-remainder with a floor, so
+the quotas add up to exactly n, no stratum is over-drawn, and the one percent
+language still gets looked at.
+
+No build tool and no dependencies: a JDK is the whole toolchain. 28 tests.
+
 ### Four browser tools
 
 All run in the browser on sample data — no API key, no server.
