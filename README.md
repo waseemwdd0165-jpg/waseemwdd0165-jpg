@@ -56,7 +56,7 @@ a modified browser cannot cheat.
 Tools built out of seven years of rating work. Each one is a loop I actually
 run, turned into something anyone can use.
 
-### [rater-agreement](https://github.com/waseemwdd0165-jpg/rater-agreement) &nbsp;<sub>Python</sub>
+### [inter-annotator-agreement](https://github.com/waseemwdd0165-jpg/inter-annotator-agreement) &nbsp;<sub>Python</sub>
 
 The useful question about two raters is never *how much did they agree*. It is
 *which boundary did they disagree on*. So this reports percent agreement,
