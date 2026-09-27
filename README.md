@@ -135,6 +135,19 @@ carries no timings for the same reason.
 
 ---
 
+## Writing
+
+Three bugs from Chalk Runner, each one a thing I got wrong and the check that
+would have caught it sooner.
+
+| | |
+|---|---|
+| **[The QR code that round-tripped and still could not be scanned](https://waseemwdd0165-jpg.github.io/writing/qr-code-that-round-tripped.html)** | I wrote the encoder and the decoder, and they agreed perfectly. Both were wrong, because the generator polynomial was built backwards. On testing against the world rather than against yourself. |
+| **[Two tabs, one seat](https://waseemwdd0165-jpg.github.io/writing/two-tabs-one-seat.html)** | Reconnect worked on every device I tried, then two tabs on one laptop turned out to be one player. localStorage is scoped to the origin, and my test double was more isolated than the browser. |
+| **[Every room had its own global leaderboard](https://waseemwdd0165-jpg.github.io/writing/every-room-had-its-own-global-board.html)** | Each room wrote the record of the day into its own Durable Object, so the board looked right everywhere and was wrong everywhere. With one room, local and global are the same object. |
+
+---
+
 ## Tech stack
 
 **Languages**
