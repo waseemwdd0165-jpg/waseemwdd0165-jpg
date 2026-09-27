@@ -116,6 +116,23 @@ Four sample batches ship with it, two that settle and two that do not, plus an
 xUnit suite over the field rules, both kinds of duplicate, and every way the
 control check can fail.
 
+### [plsql-reconciliation](https://github.com/waseemwdd0165-jpg/plsql-reconciliation) &nbsp;<sub>Oracle PL/SQL</sub>
+
+The nightly reconciliation, written twice: the row-by-row cursor it used to be
+and the single set-based statement it became. The old one is kept in the
+repository on purpose, because a rewrite cannot be judged without the thing it
+replaced, and because the worst line in it was not the per-row lookup but the
+`COMMIT` inside the loop, which leaves a failed run half reconciled.
+
+The centrepiece is the assertion script. It runs both over the same 200,000 row
+batch and fails unless they decide every line identically, down to the wording
+of the reason and the ledger id attached, and unless all six verdicts actually
+occurred, because an equivalence test over data that never reaches a branch has
+not tested it.
+
+Written out from the work and not run since; the README says so plainly and
+carries no timings for the same reason.
+
 ---
 
 ## Tech stack
