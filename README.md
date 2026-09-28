@@ -141,14 +141,18 @@ carries no timings for the same reason.
 
 ## Writing
 
-Three bugs from Chalk Runner, each one a thing I got wrong and the check that
-would have caught it sooner.
+Six pieces. Three are bugs from Chalk Runner, each one a thing I got wrong and
+the check that would have caught it sooner. Three are from the evaluation side
+of the work.
 
 | | |
 |---|---|
 | **[The QR code that round-tripped and still could not be scanned](https://waseemwdd0165-jpg.github.io/writing/qr-code-that-round-tripped.html)** | I wrote the encoder and the decoder, and they agreed perfectly. Both were wrong, because the generator polynomial was built backwards. On testing against the world rather than against yourself. |
 | **[Two tabs, one seat](https://waseemwdd0165-jpg.github.io/writing/two-tabs-one-seat.html)** | Reconnect worked on every device I tried, then two tabs on one laptop turned out to be one player. localStorage is scoped to the origin, and my test double was more isolated than the browser. |
 | **[Every room had its own global leaderboard](https://waseemwdd0165-jpg.github.io/writing/every-room-had-its-own-global-board.html)** | Each room wrote the record of the day into its own Durable Object, so the board looked right everywhere and was wrong everywhere. With one room, local and global are the same object. |
+| **[What seven years of rating AI output taught me](https://waseemwdd0165-jpg.github.io/writing/what-rating-ai-taught-me.html)** | The rubric is the hard part, not the rating. Agreement measures whether the task is specifiable. Fluent and wrong is the dangerous combination, and over-refusal is a failure teams systematically underweight. |
+| **[Test your prompts like you test your code](https://waseemwdd0165-jpg.github.io/writing/testing-prompts-like-code.html)** | Version the artifact, fix a test set, run every version against it, compare. A support-triage prompt going from 20% to 100% across three versions. |
+| **[Build a browser-based LLM response evaluator](https://waseemwdd0165-jpg.github.io/writing/build-an-llm-response-evaluator.html)** | The tool that collects RLHF preference data, built from scratch in one HTML file: rubric scoring, gold-standard agreement, JSONL export. |
 
 ---
 
