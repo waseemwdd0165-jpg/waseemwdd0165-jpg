@@ -83,7 +83,9 @@ that contains those 500. The quota maths is largest-remainder with a floor, so
 the quotas add up to exactly n, no stratum is over-drawn, and the one percent
 language still gets looked at.
 
-No build tool and no dependencies: a JDK is the whole toolchain. 28 tests.
+No build tool and no dependencies: a JDK is the whole toolchain. 28 tests, run
+on JDK 11, 17 and 21 on every push, alongside a check that draws 60 rows and
+then 120 and fails unless the first 60 are still in there.
 
 ### Four browser tools
 
@@ -112,9 +114,11 @@ threw out and the ones nobody could parse. Compare it against the survivors
 instead and a file can drop a record in transit and still balance, which is the
 one failure a control total exists to catch.
 
-Four sample batches ship with it, two that settle and two that do not, plus an
-xUnit suite over the field rules, both kinds of duplicate, and every way the
-control check can fail.
+Four sample batches ship with it, two that settle and two that do not, plus
+**51 xUnit tests** over the field rules, both kinds of duplicate, and every way
+the control check can fail. CI runs the tests on every push and then runs the
+tool over all four samples, failing the build unless each one exits with the
+code the README claims.
 
 ### [plsql-reconciliation](https://github.com/waseemwdd0165-jpg/plsql-reconciliation) &nbsp;<sub>Oracle PL/SQL</sub>
 
