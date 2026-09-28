@@ -67,8 +67,11 @@ In the sample run, one rater sits at 75 to 80 percent on three labels and
 **16.7 percent on the fourth** — she calls it by the neighbouring name almost
 every time. That is not a careless rater, it is one sentence in the guideline.
 
-No dependencies, standard library only, 30 tests with the kappa arithmetic
-worked out by hand in the comments rather than computed by the code under test.
+No dependencies, standard library only. 30 tests, run on Python 3.8 through
+3.13 on every push, with the kappa arithmetic worked out by hand in the
+comments rather than computed by the code under test — alongside a check that
+the CSV reader and the JSONL reader turn the same ratings into identical
+reports, which is the one thing the unit tests cannot catch.
 
 ### [eval-sampler](https://github.com/waseemwdd0165-jpg/eval-sampler) &nbsp;<sub>Java</sub>
 
@@ -134,8 +137,11 @@ of the reason and the ledger id attached, and unless all six verdicts actually
 occurred, because an equivalence test over data that never reaches a branch has
 not tested it.
 
-Written out from the work and not run since; the README says so plainly and
-carries no timings for the same reason.
+CI starts an Oracle Database Free container on every push and runs the whole
+thing against it — schema, seed, package, then the assertion — so the claim
+above is checked rather than asserted. It still carries no timings: a shared
+build machine over a smaller ledger would say nothing useful about either
+version, and a number that means nothing is worse than no number.
 
 ---
 
