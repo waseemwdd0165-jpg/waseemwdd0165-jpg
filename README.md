@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <sub>Based in Malegaon, Maharashtra, India (IST) &nbsp;·&nbsp; Remote &nbsp;·&nbsp; +91 92703 04741</sub>
+  <sub>Based in Malegaon, Maharashtra, India (IST)  -  Remote  -  +91 92703 04741</sub>
 </p>
 
 ---
@@ -20,15 +20,15 @@
 ## What I do
 
 I build software and I evaluate it. Knowing how a search stack or a language
-model pipeline is put together makes for sharper judgement of what it produces —
+model pipeline is put together makes for sharper judgement of what it produces -
 and years of assessing that output against detailed guidelines make for more
 careful engineering.
 
-> **Engineering** — application development across desktop, web, and mobile;
+> **Engineering** - application development across desktop, web, and mobile;
 > front-end and back-end integration; functional and non-functional QA; Agile
 > delivery; mentoring and coding standards.
 
-> **AI &amp; search evaluation** — RLHF response ranking and preference data; red
+> **AI &amp; search evaluation** - RLHF response ranking and preference data; red
 > teaming for unsafe and policy-violating output; hallucination and factuality
 > checking; prompt engineering and SFT data authoring; search and ads relevance
 > rating; multilingual evaluation and localization.
@@ -37,17 +37,17 @@ careful engineering.
 
 ## Multiplayer games
 
-Real-time games that run in a browser. No install, no account, no app store —
+Real-time games that run in a browser. No install, no account, no app store -
 open a link, share the code, and play. All three are server-authoritative on
 Cloudflare Workers with Durable Objects, so every player sees the same world and
 a modified browser cannot cheat.
 
 | Game | What it is | Built with |
 |---|---|---|
-| **[Chalk Runner](https://chalk-runner.waseemwdd0165.workers.dev/)** | Two players on a blackboard. One draws the ground, the other runs on it and never stops. Chalk runs out and only works near the runner, so the drawer is always one line behind. Walls, low roofs and no-chalk gaps force ramps and jumps, and everyone gets the same level each day. | Canvas · Web Audio · WebSockets · Durable Objects |
-| **[Pitch Black](https://pitch-black.waseemwdd0165.workers.dev/)** | A stealth game played in the dark. One hunter, everyone else runs for the exit, and the caught join the hunt. Every device renders the same maze from its own torch, and the server sends each player only what their torch reaches — so the console gives nothing away. | Canvas · Raycasting · WebSockets · Durable Objects |
-| **[Sunday Park](https://sunday-park.waseemwdd0165.workers.dev/)** | A voxel amusement park everybody shares. No room code: open the link and you are at the gate with whoever else is online. Ride the big wheel, the carousel and the swings, or get lost in the mirror maze. Rides are seat-synced from the server. | Three.js · WebSockets · Durable Objects |
-| **[Human or Machine?](https://waseemwdd0165-jpg.github.io/human-or-machine.html)** | A room-code party game for 3 to 8. Everyone reads the same response and votes on whether a person or a model wrote it, then the reveal explains what gave it away. My day job, turned into a party game. | WebRTC, peer to peer — no server at all |
+| **[Chalk Runner](https://chalk-runner.waseemwdd0165.workers.dev/)** | Two players on a blackboard. One draws the ground, the other runs on it and never stops. Chalk runs out and only works near the runner, so the drawer is always one line behind. Walls, low roofs and no-chalk gaps force ramps and jumps, and everyone gets the same level each day. | Canvas - Web Audio - WebSockets - Durable Objects |
+| **[Pitch Black](https://pitch-black.waseemwdd0165.workers.dev/)** | A stealth game played in the dark. One hunter, everyone else runs for the exit, and the caught join the hunt. Every device renders the same maze from its own torch, and the server sends each player only what their torch reaches - so the console gives nothing away. | Canvas - Raycasting - WebSockets - Durable Objects |
+| **[Sunday Park](https://sunday-park.waseemwdd0165.workers.dev/)** | A voxel amusement park everybody shares. No room code: open the link and you are at the gate with whoever else is online. Ride the big wheel, the carousel and the swings, or get lost in the mirror maze. Rides are seat-synced from the server. | Three.js - WebSockets - Durable Objects |
+| **[Human or Machine?](https://waseemwdd0165-jpg.github.io/human-or-machine.html)** | A room-code party game for 3 to 8. Everyone reads the same response and votes on whether a person or a model wrote it, then the reveal explains what gave it away. My day job, turned into a party game. | WebRTC, peer to peer - no server at all |
 
 ---
 
@@ -56,7 +56,7 @@ a modified browser cannot cheat.
 Tools built out of seven years of rating work. Each one is a loop I actually
 run, turned into something anyone can use.
 
-### [inter-annotator-agreement](https://github.com/waseemwdd0165-jpg/inter-annotator-agreement) &nbsp;<sub>Python</sub>
+### [inter-annotator-agreement](https://github.com/waseemwdd0165-jpg/inter-annotator-agreement)  <sub>Python</sub>
 
 The useful question about two raters is never *how much did they agree*. It is
 *which boundary did they disagree on*. So this reports percent agreement,
@@ -64,16 +64,16 @@ Cohen's and Fleiss' kappa, and then points at the pair of labels they keep
 mixing up and names every item they split on.
 
 In the sample run, one rater sits at 75 to 80 percent on three labels and
-**16.7 percent on the fourth** — she calls it by the neighbouring name almost
+**16.7 percent on the fourth** - she calls it by the neighbouring name almost
 every time. That is not a careless rater, it is one sentence in the guideline.
 
 No dependencies, standard library only. 30 tests, run on Python 3.8 through
 3.13 on every push, with the kappa arithmetic worked out by hand in the
-comments rather than computed by the code under test — alongside a check that
+comments rather than computed by the code under test - alongside a check that
 the CSV reader and the JSONL reader turn the same ratings into identical
 reports, which is the one thing the unit tests cannot catch.
 
-### [eval-sampler](https://github.com/waseemwdd0165-jpg/eval-sampler) &nbsp;<sub>Java</sub>
+### [eval-sampler](https://github.com/waseemwdd0165-jpg/eval-sampler)  <sub>Java</sub>
 
 Forty thousand responses, budget to rate five hundred. Which five hundred? And
 then the budget goes up and the obvious fix, redrawing, throws away every rating
@@ -92,11 +92,11 @@ then 120 and fails unless the first 60 are still in there.
 
 ### Four browser tools
 
-All run in the browser on sample data — no API key, no server.
+All run in the browser on sample data - no API key, no server.
 
 | Project | What it demonstrates |
 |---|---|
-| **[LLM Response Evaluator](https://waseemwdd0165-jpg.github.io/llm-evaluator.html)** | Side-by-side rubric scoring, forced preference choice, gold-label agreement, JSONL export — the RLHF preference-data loop |
+| **[LLM Response Evaluator](https://waseemwdd0165-jpg.github.io/llm-evaluator.html)** | Side-by-side rubric scoring, forced preference choice, gold-label agreement, JSONL export - the RLHF preference-data loop |
 | **[Search Relevance Rater](https://waseemwdd0165-jpg.github.io/search-rater.html)** | Needs Met and Page Quality rating against written guidelines, keyboard-driven, CSV export |
 | **[Prompt Testing Workbench](https://waseemwdd0165-jpg.github.io/prompt-workbench.html)** | Prompt versions run against a fixed test set with automated checks, including a prompt-injection case |
 | **[Text Annotation Tool](https://waseemwdd0165-jpg.github.io/annotation-tool.html)** | Span labelling for NER data with live inter-annotator agreement against a gold standard |
@@ -108,7 +108,7 @@ All run in the browser on sample data — no API key, no server.
 Nine years on the nationwide Cheque Truncation System rollout, written out as
 code rather than left on a CV.
 
-### [cheque-batch-validator](https://github.com/waseemwdd0165-jpg/cheque-batch-validator) &nbsp;<sub>.NET 8</sub>
+### [cheque-batch-validator](https://github.com/waseemwdd0165-jpg/cheque-batch-validator)  <sub>.NET 8</sub>
 
 A presentment batch either agrees with its own trailer or it does not settle.
 The rule that matters is which records you count: the control total is compared
@@ -123,7 +123,7 @@ the control check can fail. CI runs the tests on every push and then runs the
 tool over all four samples, failing the build unless each one exits with the
 code the README claims.
 
-### [plsql-reconciliation](https://github.com/waseemwdd0165-jpg/plsql-reconciliation) &nbsp;<sub>Oracle PL/SQL</sub>
+### [plsql-reconciliation](https://github.com/waseemwdd0165-jpg/plsql-reconciliation)  <sub>Oracle PL/SQL</sub>
 
 The nightly reconciliation, written twice: the row-by-row cursor it used to be
 and the single set-based statement it became. The old one is kept in the
@@ -138,7 +138,7 @@ occurred, because an equivalence test over data that never reaches a branch has
 not tested it.
 
 CI starts an Oracle Database Free container on every push and runs the whole
-thing against it — schema, seed, package, then the assertion — so the claim
+thing against it - schema, seed, package, then the assertion - so the claim
 above is checked rather than asserted. It still carries no timings: a shared
 build machine over a smaller ledger would say nothing useful about either
 version, and a number that means nothing is worse than no number.
@@ -147,13 +147,13 @@ version, and a number that means nothing is worse than no number.
 
 ## Writing
 
-Six pieces. Three are engineering write-ups from Chalk Runner — something I
+Six pieces. Three are engineering write-ups from Chalk Runner - something I
 built, the bug that survived my own tests, and the check that would have caught
 it sooner. Three are from the evaluation side of the work.
 
 | | |
 |---|---|
-| **[The QR code that round-tripped and still could not be scanned](https://waseemwdd0165-jpg.github.io/writing/qr-code-that-round-tripped.html)** | No library and no build step, so I wrote the QR encoder myself, Reed–Solomon and all, plus a decoder to test it. They agreed perfectly and both were wrong, because the generator polynomial was built backwards. On testing against the world rather than against yourself. |
+| **[The QR code that round-tripped and still could not be scanned](https://waseemwdd0165-jpg.github.io/writing/qr-code-that-round-tripped.html)** | No library and no build step, so I wrote the QR encoder myself, Reed-Solomon and all, plus a decoder to test it. They agreed perfectly and both were wrong, because the generator polynomial was built backwards. On testing against the world rather than against yourself. |
 | **[Two tabs, one seat](https://waseemwdd0165-jpg.github.io/writing/two-tabs-one-seat.html)** | The server holds a dropped player's seat for twenty-five seconds, and reconnect survived every phone, cable and lock screen I tried. Then two tabs on one laptop turned out to be one player: localStorage is scoped to the origin, and my test double was more isolated than the browser. |
 | **[Every room had its own global leaderboard](https://waseemwdd0165-jpg.github.io/writing/every-room-had-its-own-global-board.html)** | A record of the day shared across every room, on Cloudflare Durable Objects. Each room wrote it into its own object, so the board looked right everywhere and was wrong everywhere. With one room, local and global are the same object. |
 | **[What seven years of rating AI output taught me](https://waseemwdd0165-jpg.github.io/writing/what-rating-ai-taught-me.html)** | The rubric is the hard part, not the rating. Agreement measures whether the task is specifiable. Fluent and wrong is the dangerous combination, and over-refusal is a failure teams systematically underweight. |
@@ -209,11 +209,11 @@ it sooner. Three are from the evaluation side of the work.
 
 Net Tech Services India Pvt. Ltd, Mumbai
 
-<sub>*Jan 2017 – Mar 2025*</sub>
+<sub>*Jan 2017 - Mar 2025*</sub>
 
 </td><td valign="top">
 
-- Contributed to the nationwide Cheque Truncation System (CTS) rollout for core banking — a regulated, high-availability environment where a failed deployment stops branch operations
+- Contributed to the nationwide Cheque Truncation System (CTS) rollout for core banking - a regulated, high-availability environment where a failed deployment stops branch operations
 - Designed, built, and shipped applications, websites, and mobile apps for clients, from architecture through deployment
 - Led front-end and back-end integration; ran functional and non-functional QA
 - Mentored junior developers and helped set coding standards across the team
@@ -221,11 +221,11 @@ Net Tech Services India Pvt. Ltd, Mumbai
 </td></tr>
 <tr><td width="230" valign="top">
 
-**AI &amp; LLM Quality Evaluator · Search Evaluator · Localization Analyst**
+**AI &amp; LLM Quality Evaluator - Search Evaluator - Localization Analyst**
 
 Freelance
 
-<sub>*2018 – Present*</sub>
+<sub>*2018 - Present*</sub>
 
 </td><td valign="top">
 
@@ -256,8 +256,8 @@ Net Tech Services India Pvt. Ltd
 
 ## Education
 
-**B.E. Computer Engineering** — University of Mumbai, Rizvi College of Engineering
-<br><sub>Examination May 2015 · Convocation January 2017</sub>
+**B.E. Computer Engineering** - University of Mumbai, Rizvi College of Engineering
+<br><sub>Examination May 2015 - Convocation January 2017</sub>
 
 ---
 
